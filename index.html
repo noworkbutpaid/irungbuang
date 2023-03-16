@@ -61,7 +61,32 @@
         <div class="gafi_body"> 
         
         <div class="gamfi_header_v2">
-            
+        <!-- Add this HTML where you want the modal to appear -->
+         <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Investor Information: Contract Tax</h3>
+    <div class="image-container">
+      <div class="image-column">
+        <img class="image" src="assets/images/normal.png" alt="Normal Buy Pressure">
+        <p>Image 1: Normal Buy Pressure</p>
+        <p>With normal buy pressure, token demand is stable, and trading is average. The TwogeCEO tax applies standard fees, ensuring a balanced market and promoting regular trading. This creates a healthy environment for all investors and supports a sustainable ecosystem.</p>
+      </div>
+      <div class="image-column">
+        <img class="image" src="assets/images/high.png" alt="High Buy Pressure">
+        <p>Image 2: High Buy Pressure</p>
+        <p>When buy pressure is high, token demand increases rapidly, causing potential market volatility. To protect new investors and discourage market manipulation by large investors (whales), the TwogeCEO tax raises transaction fees. This helps maintain market stability and prevents sudden price drops that could harm investors.</p>
+      </div>
+    </div>
+    <div class="text-container">
+      <p>As a new investor, understanding the TwogeCEO tax in different market conditions is important. The tax system adjusts fees based on market demand, protecting investors and promoting a secure ecosystem.</p>
+      
+      <p>During high buy pressure, fees increase to discourage market manipulation. During normal buy pressure, standard fees apply, encouraging regular trading. A portion of the collected fees goes to a dev/marketing wallet, funding buybacks, liquidity injections, and other initiatives that support the project's long-term success.</p>
+      
+      <p>In short, the TwogeCEO tax system adapts to market conditions, ensuring a stable and secure investment environment.</p>
+    </div>
+  </div>
+</div>
        <!--Header Start-->
        <header id="gamfi-header" class="gamfi-header-section transparent-header">
             <div class="menu-area menu-sticky">
@@ -326,27 +351,17 @@
                         <div class="col-md-6">
 
                             <div class="sc_banner_V3_left">
-                                <h2 class="header_ wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">BSC Chain
+                                <h2 class="header_ wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">Flooz Trade
                                 <br>
-                                <p class="subheader_ wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.7s" style="font-size:25px">Buy directly on Pancakeswap</p>
+                                <p class="subheader_ wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.7s" style="font-size:25px">Buy directly on Flooz Trade</p>
                             
-                                <p class="context_ wow fadeInUp" style="text-align: justify;" data-wow-delay="0.5s" data-wow-duration="0.7s">To buy Twoge Ceo on Pancakeswap, simply connect your Binance Smart Chain wallet to Pancakeswap and navigate to the trading interface. From there, select Twoge Ceo as the token you wish to purchase and enter the desired amount. Confirm the transaction and wait for it to be processed by the blockchain. That's it! You now own Twoge Ceo.</p></h2>
+                                <p class="context_ wow fadeInUp" style="text-align: justify;" data-wow-delay="0.5s" data-wow-duration="0.7s">You TwogeCEO using Flooz Trade, visit the TwogeCEO website and locate the Flooz Trade section. Connect your Binance Smart Chain wallet, choose the token you want to swap, enter the amount, and confirm the transaction. Once processed, you'll have successfully purchased TwogeCEO.</p></h2>
                                 
                             </div>
                         </div>
                         <div class="col-md-6" id="Crosschain">
-                            <div class="sc_banner_V3_right sc_banner_V4_right wow fadeInRight mt-20" style="visibility: visible; animation-name: fadeInRight;"> 
-                              
-                                <div class="avatar TokenomicsContentsrightImg box" style="
-                                    width: unset;
-                                    height: -webkit-fill-available;
-                                    display: flex;
-                                "> 
-                                    <iframe src='https://pancakeswap.finance/swap?outputCurrency=0xA59e9A03Ca703E2Ae244cb3Ae0796bD76C2cEcAa'
-                                    style="height: 356px; width: 100%; box-shadow: 0px 0px 20px 1px #b700ff;" class="avatar-iframe"></iframe>                         
- 
-                                </div>
-                            </div>
+                            
+                                   <iframe width="400" height="690" frameborder="0" allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *" src="https://flooz.trade/embed/trade?swapDisabled=true&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=false&onRampDefaultAmount=200&network=bsc&lightMode=true&primaryColor=%235e38f4&roundedCorners=20&padding=20&refId=z4XKDN" ></iframe>
                         </div>
                     </div>
                 </div>
@@ -1122,5 +1137,26 @@ $(document).ready(function() {
         }, 3000);
     </script>
     <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
+   <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById("myModal");
+    var closeBtn = document.getElementsByClassName("close")[0];
+
+    // Display the modal when the page loads
+    modal.style.display = "block";
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  });
+</script>
+
+
     </body>
 </html>

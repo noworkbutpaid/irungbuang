@@ -172,6 +172,98 @@ h6 {
 .uppercase {
   text-transform: uppercase !important;
 }
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 720px;
+  height: 1080px;
+  max-width: 95%;
+  max-height: 95%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: auto; /* Add this line to enable scrolling */
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 1200px;
+  height: 720px;
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  flex: 1;
+  min-width: 50%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  text-align: center; /* Add this line */
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 767px) {
+  .image-wrapper {
+    min-width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  margin-bottom: 20px;
+}
+
+.additional-info {
+  margin-top: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+/* Customize the scroll bar for the modal */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* For other browsers */
+.modal-content {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 128, 128, 0.3) transparent;
+}
 
 a {
   color: #FFFFFF;
